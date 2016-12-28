@@ -1,0 +1,91 @@
+Main menu
+
+   1) Common Configuration:
+        +Hostname:                             mail.awankinton.com
+        +Ldap master host:                     mail.awankinton.com
+        +Ldap port:                            389
+        +Ldap Admin password:                  set
+        +Secure interprocess communications:   yes
+        +TimeZone:                             UTC
+        +IP Mode:                              ipv4
+        +Default SSL digest:                   sha256
+
+   2) zimbra-ldap:                             Enabled
+        +Create Domain:                        yes
+        +Domain to create:                     mail.awankinton.com
+        +Ldap root password:                   set
+        +Ldap replication password:            set
+        +Ldap postfix password:                set
+        +Ldap amavis password:                 set
+        +Ldap nginx password:                  set
+        +Ldap Bes Searcher password:           set
+
+   3) zimbra-logger:                           Enabled
+   4) zimbra-mta:                              Enabled
+        +Enable Spamassassin:                  yes
+        +Enable Clam AV:                       yes
+        +Enable OpenDKIM:                      yes
+        +Notification address for AV alerts:   admin@mail.awankinton.com
+        +Bind password for postfix ldap user:  set
+        +Bind password for amavis ldap user:   set
+
+   5) zimbra-dnscache:                         Enabled
+        +Master DNS IP address(es):            172.29.233.16
+        +Enable DNS lookups over TCP:          yes
+        +Enable DNS lookups over UDP:          yes
+        +Only allow TCP to communicate with Master DNS: no
+
+   6) zimbra-snmp:                             Enabled
+        +Enable SNMP notifications:            yes
+        +SNMP Trap hostname:                   mail.awankinton.com
+        +Enable SMTP notifications:            yes
+        +SMTP Source email address:            admin@mail.awankinton.com
+        +SMTP Destination email address:       admin@mail.awankinton.com
+
+   7) zimbra-store:                            Enabled
+        +Create Admin User:                    yes
+        +Admin user to create:                 admin@mail.awankinton.com
+        +Admin Password                        set
+        +Anti-virus quarantine user:           virus-quarantine.cid1websux@mail.awankinton.com
+        +Enable automated spam training:       yes
+        +Spam training user:                   spam.wemgt66ppk@mail.awankinton.com
+        +Non-spam(Ham) training user:          ham.jf3yjhmh9@mail.awankinton.com
+        +SMTP host:                            mail.awankinton.com
+        +Web server HTTP port:                 8080
+        +Web server HTTPS port:                8443
+        +Web server mode:                      https
+        +IMAP server port:                     7143
+        +IMAP server SSL port:                 7993
+        +POP server port:                      7110
+        +POP server SSL port:                  7995
+        +Use spell check server:               yes
+        +Spell server URL:                     http://mail.awankinton.com:7780/aspell.php
+        +Enable version update checks:         TRUE
+        +Enable version update notifications:  TRUE
+        +Version update notification email:    admin@mail.awankinton.com
+        +Version update source email:          admin@mail.awankinton.com
+        +Install mailstore (service webapp):   yes
+        +Install UI (zimbra,zimbraAdmin webapps): yes
+
+   8) zimbra-spell:                            Enabled
+   9) zimbra-proxy:                            Enabled
+        +Enable POP/IMAP Proxy:                TRUE
+        +IMAP proxy port:                      143
+        +IMAP SSL proxy port:                  993
+        +POP proxy port:                       110
+        +POP SSL proxy port:                   995
+        +Bind password for nginx ldap user:    set
+        +Enable HTTP[S] Proxy:                 TRUE
+        +HTTP proxy port:                      80
+        +HTTPS proxy port:                     443
+        +Proxy server mode:                    https
+
+  10) Default Class of Service Configuration:
+        +Enable Tasks Feature:                 Enabled
+
+   c) Collapse menu
+   s) Save config to file
+   q) Quit
+
+*** CONFIGURATION COMPLETE - press 'a' to apply
+Select from menu, or press 'a' to apply config (? - help)
