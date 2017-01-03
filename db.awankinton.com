@@ -11,7 +11,5 @@ $TTL    604800
 ;
 @       IN      NS      ns.awankinton.com.
 ns      IN      A       172.29.233.16
-IN      MX      1       mail.awankinton.com.
-mail    IN      A       172.29.233.15
-www     IN      A       172.29.233.17
-web     IN      CNAME   www.
+www     IN      A       172.29.233.19
+mail    IN      A       172.29.233.20
